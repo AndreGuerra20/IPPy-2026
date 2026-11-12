@@ -1,0 +1,22 @@
+# Ficha 3 - 3.3 Ex 1
+# Determine o resultado das expressões com strings em Python.
+
+print('(a)', 'Ola Mundo')
+print('(b)', 'Ola Mundo' * 4)
+print('(c)', "Feliz" * 6)
+print('(d)', '''*''' * 50)
+print('(e)', "Eu sou\nFeliz")
+print('(f)', 'Nome:\n\tIdade:')
+print('(g)')
+print('Nome:\n\tIdade:')
+print('(h)', str(12.34))
+print('(i)', 'Ano ' + str(2021))
+print('(j)', str(23) + str(45))
+print('(k)', float(str(3) + str(5)))
+print('(l)', int('3' + '5'))
+print('(m)', 'a' != 'A')
+print('(n)', ' A' < 'A')               # o espaço (32) vem antes do 'A' (65)
+print('(o)', '123' < 'Mundo')          # os dígitos vêm antes das letras na tabela ASCII
+print('(p)', len('Ola Mundo'))
+print('(q)', 'Pasta C:\\temp\\lixo')
+print('(r)', '150' + '\N{euro sign}')
