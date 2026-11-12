@@ -12,8 +12,8 @@ menor = min(lista)
 print("Maior:", maior, "| Menor:", menor)
 
 # b) Índices onde aparecem o maior e o menor (podem repetir-se)
-ind_maior = [i for i in range(len(lista)) if lista[i] == maior]
-ind_menor = [i for i in range(len(lista)) if lista[i] == menor]
+ind_maior = lista.index(maior)
+ind_menor = lista.index(menor)
 print("Índices do maior:", ind_maior, "| Índices do menor:", ind_menor)
 
 # c) Soma de todos os elementos
@@ -38,7 +38,10 @@ for x in lista:
 print("Múltiplos de 5 a 0 (alternativo):", sem_mult5)
 
 # f) Eliminar os valores superiores a 35 e inferiores a 60
-filtrada = [x for x in lista if not (35 < x < 60)]
+filtrada = []
+for x in lista:
+    if x <= 35 or x >= 60:
+        filtrada.append(x)
 print("Sem valores entre 35 e 60:", filtrada)
 
 # g) Eliminar os valores cujos índices são múltiplos de 4
