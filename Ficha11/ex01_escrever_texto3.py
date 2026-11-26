@@ -10,7 +10,7 @@ ficheiro.write(texto)
 ficheiro.close()
 
 # Versão com a instrução with (o ficheiro é fechado automaticamente)
-with open('texto3.txt', 'w', encoding='utf-8') as ficheiro:
-    ficheiro.write(texto)
+#with open('texto3.txt', 'w', encoding='utf-8') as ficheiro:
+#    ficheiro.write(texto)
 
 print('Ficheiro texto3.txt criado.')
